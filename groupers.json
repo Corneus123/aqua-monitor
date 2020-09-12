@@ -1,16 +1,25 @@
 [
     {
         "type": "regex",
-        "value": "まつり",
+        "value": "あくあ",
         "interval": 10,
         "min_len": 5,
         "notify": true,
         "unique_author": true,
-        "skip_channels": ["UCQ0UDLQCjY0rmuxCDE38FGg"]
+        "skip_channels": ["UC1opHUrw8rvnsadT-iGp7Cg"]
+    },
+    {
+        "type": "regex",
+        "value": "あくたん",
+        "interval": 10,
+        "min_len": 5,
+        "notify": true,
+        "unique_author": true,
+        "skip_channels": ["UC1opHUrw8rvnsadT-iGp7Cg"]
     },
     {
         "type": "username",
-        "value": "Matsuri Channel 夏色まつり",
+        "value": "Aqua Ch. 湊あくあ",
         "interval": 5,
         "notify": true
     }

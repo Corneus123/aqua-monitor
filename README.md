@@ -1,20 +1,20 @@
-# Matsuri Monitor
+# Aqua Monitor
 
-Monitors livestream chat from Hololive + Holostars streams and records messages that contain certain keywords or written by certain users.
+Just as the title said, it's Aqua's monitor, that keep monitoring Hololive + Holostars stream and records the message that contain a certain keyword from it
 
-Blatantly uses [dragonjet's](https://twitter.com/dragonjetmkii) JSON endpoints from his [Hololive Tools](https://hololive.jetri.co/#/) site to monitor live streams.
+Basic code is from [matsuri monitor](https://github.com/lyger/matsuri-monitor) also using [dragonjet's](https://twitter.com/dragonjetmkii) JSON endpoints from his [Hololive Tools](https://hololive.jetri.co/#/) to monitor live stream.
 
-Named "Matsuri Monitor" because I'm obsessed and that's how I plan to use it, but can be customized to monitor any regex or username by modifying the `groupers.json` file.
-
-Code sucks but is probably functional.
-
-You can (probably) deploy it yourself by doing this, replacing `$LOCAL_PORT` with the port on your local machine to serve from and `$LOCAL_ARCHIVES_DIR` with the directory on your local machine to save gzipped JSON reports to.
+Named "Aqua Monitor" because... it's Aqua's monitor as well. how to use it, basically modifying the `groupers.json` file. (for more information see Matsuri-monitor github)
 
 ```bash
-$ docker build -t matsuri-monitor .
+$ docker build -t Aqua-monitor .
 $ docker run -d \
-    --name matsuri-monitor \
+    --name Aqua-monitor \
     -p 127.0.0.1:$LOCAL_PORT:8080/tcp \
     --mount type=bind,target=/app/archives,source=$LOCAL_ARCHIVES_DIR \
-    matsuri-monitor
+    Aqua-monitor --
 ```
+
+Mount for where you save the file (the directory)
+
+`$LOCAL_PORT` needed to be higher than 1024

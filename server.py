@@ -6,7 +6,7 @@ import tornado.ioloop
 import tornado.options
 import tornado.web
 
-from matsuri_monitor import Supervisor, handlers
+from aqua_monitor import Supervisor, handlers
 
 tornado.options.define('port', default=8080, type=int, help='Run on the given port')
 tornado.options.define('debug', default=False, type=bool, help='Run in debug mode')
