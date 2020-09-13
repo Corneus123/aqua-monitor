@@ -7,12 +7,12 @@ Basic code is from [matsuri monitor](https://github.com/lyger/matsuri-monitor) a
 Named "Aqua Monitor" because... it's Aqua's monitor as well. how to use it, basically modifying the `groupers.json` file. (for more information see Matsuri-monitor github)
 
 ```bash
-$ docker build -t Aqua-monitor .
+$ docker build -t aqua-monitor .
 $ docker run -d \
-    --name Aqua-monitor \
+    --name aqua-monitor \
     -p 127.0.0.1:$LOCAL_PORT:8080/tcp \
     --mount type=bind,target=/app/archives,source=$LOCAL_ARCHIVES_DIR \
-    Aqua-monitor --
+    aqua-monitor --
 ```
 
 Mount for where you save the file (the directory)
