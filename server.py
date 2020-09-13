@@ -17,7 +17,7 @@ def main():
     """Create app and start server"""
     supervisor = Supervisor(tornado.options.options.interval)
 
-    static_path = Path(__file__).parent.absolute() / 'matsuri_monitor' / 'static'
+    static_path = Path(__file__).parent.absolute() / 'aqua_monitor' / 'static'
     static_url_prefix = r'/_monitor/static/'
 
     print(static_path)
